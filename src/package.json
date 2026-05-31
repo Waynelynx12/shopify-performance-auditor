@@ -1,0 +1,31 @@
+{
+  "name": "shopify-performance-auditor",
+  "version": "1.0.0",
+  "description": "A diagnostic script that crawls Shopify storefronts and flags CLS issues, render blocking scripts, uncompressed assets, and mobile funnel leaks killing your conversion rate.",
+  "main": "src/audit.js",
+  "scripts": {
+    "start": "node src/audit.js",
+    "audit": "node src/audit.js --url",
+    "report": "node src/reporter.js"
+  },
+  "dependencies": {
+    "chrome-launcher": "^0.15.2",
+    "dotenv": "^16.0.3",
+    "lighthouse": "^11.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "shopify",
+    "performance",
+    "lighthouse",
+    "cro",
+    "pagespeed",
+    "cls",
+    "mobile-optimization",
+    "ecommerce"
+  ],
+  "author": "Sheriff Wayne",
+  "license": "MIT"
+}
